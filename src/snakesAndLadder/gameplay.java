@@ -8,6 +8,7 @@ public class gameplay {
 		int player1 = 1;
 		int start = 0;
 		int pos = start;
+		int count=0;
 		Random ran = new Random();
 		
 		for(int i=1;;) {
@@ -29,7 +30,8 @@ public class gameplay {
 					pos=pos+dice;
 				    break;
 				}
-		}	
+		}
+		count++;
 		System.out.println(pos);
 			if (pos==100)
 				break;
@@ -37,6 +39,7 @@ public class gameplay {
 		
 								
 		}
+		System.out.println("Number of times dice was rolled to win the game: "+count);
 		
 	}
 	
