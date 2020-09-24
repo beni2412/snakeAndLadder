@@ -23,11 +23,15 @@ public class gameplay {
 					pos=0;
 				break;
 			case 3:
-				pos=pos+dice;
-				break;
+				if((pos+dice)>100)
+					break;
+				else {
+					pos=pos+dice;
+				    break;
+				}
 		}	
 		System.out.println(pos);
-			if (pos>=100)
+			if (pos==100)
 				break;
 		
 		
